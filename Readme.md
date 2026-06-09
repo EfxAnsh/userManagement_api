@@ -280,16 +280,13 @@ spring.jpa.properties.hibernate.format_sql=true
 
 ---
 
-## Active Users API
+## Active/Inactive Users API
 
 
-![Active Users](p8.png)
+![Active Users](p8.png) 
 
----
 
-## Inactive Users API
 
-![Inactive Users](p9.png)
 
 ---
 # Postman screenshots 
