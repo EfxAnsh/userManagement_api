@@ -348,27 +348,6 @@ http://localhost:8080
 
 ---
 
-# Reference Documentation
-
-For further reference, please consider the following sections:
-
-- Official Apache Maven Documentation
-- Spring Boot Maven Plugin Reference Guide
-- Spring Web Documentation
-- Spring Data JPA Documentation
-- MySQL Connector/J Documentation
-
-### Official Links
-
-- https://maven.apache.org/guides/index.html
-- https://docs.spring.io/spring-boot/4.0.6/maven-plugin
-- https://docs.spring.io/spring-boot/4.0.6/reference/web/servlet.html
-- https://docs.spring.io/spring-boot/4.0.6/reference/data/sql.html#data.sql.jpa-and-spring-data
-- https://spring.io/guides/gs/accessing-data-mysql/
-
----
-
-# Author
 
 **Anshuman Rangarh**
 
