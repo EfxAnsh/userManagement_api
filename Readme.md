@@ -12,9 +12,7 @@ This Task was to  implement complete CRUD operations for User/Customer managemen
 - Read All Users
 - Update User
 - Soft Delete User
-- Active/Inactive User Status
-- Fetch Active Users
-- Fetch Inactive Users
+- Fetch by Active/Inactive User Status
 ---
 
 # Technology Stack
