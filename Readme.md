@@ -173,25 +173,21 @@ This preserves historical data and enables auditing.
 
 ---
 
-## 5. Get Active Users
-
+## 5. Get User by status
+### Active users
 ### Request
 
 ```http
-GET /users/active
+GET /users/status?active=true
 ```
-
----
-
-## 6. Get Inactive Users
-
+### Inactive users
 ### Request
 
 ```http
-GET /users/inactive
+GET /users/status?active=false
 ```
-
 ---
+
 
 # Soft Delete Implementation
 
@@ -296,6 +292,37 @@ spring.jpa.properties.hibernate.format_sql=true
 ## Inactive Users API
 
 ![Inactive Users](p9.png)
+
+---
+# Postman screenshots 
+
+---
+## Create User Request
+![Inactive Users](p10.jpg)
+
+---
+## Get User By ID Request
+![Inactive Users](p11.jpg)
+![Inactive Users](p12.jpg)
+---
+## Get All Users Request
+![Inactive Users](p13.jpg)
+
+---
+## Update User Request
+![Inactive Users](p14.jpg)
+
+---
+## Soft Delete Request
+![Inactive Users](p15.png)
+
+---
+## Active Users Request
+![Inactive Users](p16.jpg)
+
+---
+## Inactive Users Request
+![Inactive Users](p17.jpg)
 
 ---
 

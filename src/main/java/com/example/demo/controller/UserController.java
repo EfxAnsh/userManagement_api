@@ -22,16 +22,25 @@ public class UserController {
         return "Controller Working";
     }
 
+    // Create User
     @PostMapping
     public User createUser(@RequestBody User user) {
         return userService.createUser(user);
     }
 
+    // Get All Users
     @GetMapping
     public List<User> getUsers() {
         return userService.getAllUsers();
     }
 
+    // Get User By ID
+    @GetMapping("/{id}")
+    public User getUserById(@PathVariable Long id) {
+        return userService.getUserById(id);
+    }
+
+    // Update User
     @PutMapping("/{id}")
     public User updateUser(@PathVariable Long id,
                            @RequestBody User user) {
@@ -39,6 +48,7 @@ public class UserController {
         return userService.updateUser(id, user);
     }
 
+    // Soft Delete User
     @DeleteMapping("/{id}")
     public String deleteUser(@PathVariable Long id) {
 
@@ -47,13 +57,9 @@ public class UserController {
         return "User soft deleted successfully";
     }
 
-    @GetMapping("/active")
-    public List<User> getActiveUsers() {
-        return userService.getActiveUsers();
-    }
-
-    @GetMapping("/inactive")
-    public List<User> getInactiveUsers() {
-        return userService.getInactiveUsers();
+    // Single Dynamic API for Active/Inactive Users
+    @GetMapping("/status")
+    public List<User> getUsersByStatus(@RequestParam boolean active) {
+        return userService.getUsersByStatus(active);
     }
 }
